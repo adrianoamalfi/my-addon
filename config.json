@@ -1,12 +1,15 @@
 {
-  "name": "Demo Addon",
-  "version": "0.1",
+  "name": "My Addon",
+  "version": "0.1.0",
   "slug": "myaddon",
-  "description": "Add-on that prints 'Hello, world' to the log and exits",
-  "url": "https://github.com/issacg/hassio-addon-devcontainer",
-  "startup": "once",
-  "boot": "manual",
+  "description": "Add-on that install python, prints 'Hello, world' to the log and exits",
+  "url": "https://github.com/adrianoamalfi/my-addon",
+  "startup": "before",
+  "boot": "auto",
   "options": {},
   "schema": {}, 
+  "ports": {
+    "8000/tcp": 8129
+  },
   "arch": ["amd64", "armv7", "armhf", "i386" , "aarch64"]
 }
